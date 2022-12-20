@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'my_change_notifier.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -29,6 +31,7 @@ class MyContainer extends StatelessWidget {
         backgroundColor: Colors.teal,
         centerTitle: true,
       ),
+      body: MyChangeNotifier(),
     );
   }
 }
